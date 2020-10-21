@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="255dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:layout_toStartOf="@+id/imageButton"
+        app:srcCompat="@drawable/nav_logo_whiteout" />
+
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="2dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPostImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Description" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDescription"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:background="#00adee"
+        style="@style/NiceButton"
+        android:text="Submit" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ufi_new_direct" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/imageView3"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ufi_more" />
+
+    <ImageButton
+        android:id="@+id/btnCaptureImage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:background="#00000000"
+        app:srcCompat="@drawable/instagram_new_post_outline_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:background="#00000000"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/instagram_home_filled_24" />
+
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/imageButton7"
+        android:background="#00000000"
+        app:srcCompat="@drawable/instagram_user_filled_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/btnCaptureImage"
+        android:background="#00000000"
+        app:srcCompat="@drawable/ufi_heart" />
+
+</RelativeLayout>
